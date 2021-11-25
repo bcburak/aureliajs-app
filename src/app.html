@@ -1,0 +1,36 @@
+<template>
+<require from="bootstrap/dist/css/bootstrap.min.css"></require>
+
+<div class="row justify-content-center">
+  <div class="col-md-8">
+
+  <form role="form" submit.delegate="addUser()" validate.bind="validation" >
+  <div class="form-group">
+    <label for="exampleInputEmail1" t="profile.firstName">${profile.firstName}</label>
+    <input type="text" class="form-control" value.bind="firstName" id="exampleInputEmail1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" t="profile.LastName">${profile.LastName}</label>
+    <input type="text" class="form-control" value.bind="lastName" id="exampleInputPassword1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" t="profile.Age">${profile.Age}</label>
+    <input type="text" class="form-control" value.bind="age" id="exampleInputPassword1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" t="profile.Email">${profile.Email}</label>
+    <input type="text" class="form-control" value.bind="email" id="exampleInputPassword1" >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" t="profile.Address">${profile.Address}</label>
+    <textarea class="form-control" value.bind="address" id="exampleFormControlTextarea1" rows="3">Enter text here...</textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" click.delegate="postData()">Submit</button>
+  <button type="button" class="btn btn-primary" disabled.bind="!canReset" click.delegate="openModal()">Reset</button>
+</form>
+</div> </div>
+<div style="width: 200px; float:left;" t="profile.my_name_is"></div> <div style="width: 200px; float:left;">${profile.name}.</div><br>
+  
+    <div style="width: 200px; float:left;" t="profile.my_profession_is"></div><div style="width: 200px; float:left;"></div>${profile.university}.</div><br>
+    <div style="width: 200px; float:left;" t="profile.contact_me_over_phone"></div><div style="width: 200px; float:left;"></div>${profile.contact_number}.</div>
+</template>

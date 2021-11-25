@@ -1,0 +1,27 @@
+<template>
+  <require from="bootstrap/dist/css/bootstrap.min.css"></require>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody if.bind="userRecords && userRecords.length">
+      <tr repeat.for="usr of userRecords">
+        <td>${usr.fname}</td>
+        <td>${usr.lname}</td>
+        <td>${usr.age}</td>
+        <td>${usr.gender}</td>
+        <td>${usr.department}</td>
+      </tr>
+    </tbody>
+    <tbody if.bind="!userRecords || !userRecords.length">
+      <tr>
+        <td colspan="5">No data</td>
+      </tr>
+    </tbody>
+  </table>
+</template>

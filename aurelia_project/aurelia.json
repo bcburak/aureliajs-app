@@ -1,0 +1,39 @@
+{
+  "name": "hahn-aurelia",
+  "type": "project:application",
+  "paths": {
+    "root": "src",
+    "resources": "resources",
+    "elements": "resources/elements",
+    "attributes": "resources/attributes",
+    "valueConverters": "resources/value-converters",
+    "bindingBehaviors": "resources/binding-behaviors"
+  },
+  "dependencies":{
+    "name": "aurelia-notify",
+    "path": "../node_modules/aurelia-notify/dist/amd",
+    "main": "aurelia-notify",
+    "resources": [
+      "bs-notification.html",
+      "style.css"
+    ]
+  },
+  "transpiler": {
+    "id": "typescript",
+    "fileExtension": ".ts"
+  },
+  "build": {
+    "options": {
+      "server": "dev",
+      "extractCss": "prod",
+      "coverage": false
+    }
+  },
+  "platform": {
+    "hmr": false,
+    "open": false,
+    "port": 8080,
+    "host": "localhost",
+    "output": "dist"
+  }
+}

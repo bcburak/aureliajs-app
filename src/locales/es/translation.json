@@ -1,0 +1,16 @@
+{
+  "profile": {
+    "my_name_is": "Me llamo ",
+    "my_profession_is": "Mi profesión es ",
+    "contact_me_over_phone":"Contáctame por teléfono ",
+    "firstName": "First Name",
+    "LastName": "Last Name",
+    "Age":"Age",
+    "Email":"Email",
+    "Address":"Address"
+  },
+  "profile_heading": "Perfil"
+}
+
+
+
