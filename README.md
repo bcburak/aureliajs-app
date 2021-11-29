@@ -1,8 +1,16 @@
 # `hahn-aurelia`
 
-This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
+Using aurelia.js with typescript
+Using bootstrap for the UI
 
-For more information, go to https://aurelia.io/docs/cli/webpack
+Using bootstrap form
+Using localization with i18n
+Form has two buttons and using reset button to clear form 
+Using aurelia-dialog modal has some issues, it's not working if you do it according to their documentations. Check for solution:https://stackoverflow.com/questions/45601447/aurelia-dialog-runs-then-before-dialog-returns
+
+
+X aurelia validation getting some errors with typescript, resources are not well enogh, so its missed
+X router has some issues, so it has not completed.
 
 ## Run dev app
 
